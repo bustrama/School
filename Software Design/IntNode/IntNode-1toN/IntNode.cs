@@ -22,8 +22,7 @@ namespace IntNode_1toN
             this.next = next;
         }
 
-
-        public string printIntNode(IntNode chain)
+        public static string printIntNode(IntNode chain)
         {
             string chainString = null;
             if (chain.next == null)

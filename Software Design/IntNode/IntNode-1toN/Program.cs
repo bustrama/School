@@ -13,6 +13,14 @@ namespace IntNode_1toN
             int n = rand.Next(2, 100);
 
             IntNode chain = new IntNode(2);
+
+            for (int i = 3; i < n; i++)
+            {
+                chain.next = new IntNode(i);
+                chain = chain.next;
+            }
+
+            Console.WriteLine(IntNode.printIntNode(chain));
         }
     }
 }
