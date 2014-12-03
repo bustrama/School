@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sidra", "Sidra\Sidra.csproj", "{8578C8FE-20C3-48BB-BB54-2C0AA69B009A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SidraFalindrom", "SidraFalindrom\SidraFalindrom.csproj", "{2D98A2A8-522C-4AEE-AA58-DA0BF5F13FA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WierdSidra", "WierdSidra\WierdSidra.csproj", "{DA173E09-E00F-48CD-A061-ACEA64F9BFD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8578C8FE-20C3-48BB-BB54-2C0AA69B009A}.Debug|x86.ActiveCfg = Debug|x86
+		{8578C8FE-20C3-48BB-BB54-2C0AA69B009A}.Debug|x86.Build.0 = Debug|x86
+		{8578C8FE-20C3-48BB-BB54-2C0AA69B009A}.Release|x86.ActiveCfg = Release|x86
+		{8578C8FE-20C3-48BB-BB54-2C0AA69B009A}.Release|x86.Build.0 = Release|x86
+		{2D98A2A8-522C-4AEE-AA58-DA0BF5F13FA5}.Debug|x86.ActiveCfg = Debug|x86
+		{2D98A2A8-522C-4AEE-AA58-DA0BF5F13FA5}.Debug|x86.Build.0 = Debug|x86
+		{2D98A2A8-522C-4AEE-AA58-DA0BF5F13FA5}.Release|x86.ActiveCfg = Release|x86
+		{2D98A2A8-522C-4AEE-AA58-DA0BF5F13FA5}.Release|x86.Build.0 = Release|x86
+		{DA173E09-E00F-48CD-A061-ACEA64F9BFD2}.Debug|x86.ActiveCfg = Debug|x86
+		{DA173E09-E00F-48CD-A061-ACEA64F9BFD2}.Debug|x86.Build.0 = Debug|x86
+		{DA173E09-E00F-48CD-A061-ACEA64F9BFD2}.Release|x86.ActiveCfg = Release|x86
+		{DA173E09-E00F-48CD-A061-ACEA64F9BFD2}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

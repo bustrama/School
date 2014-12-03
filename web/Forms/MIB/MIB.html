@@ -1,0 +1,64 @@
+﻿<html>
+<head>
+  <title>MIB</title>
+</head>
+
+<body>
+    <table style="width:80%" align="center">
+      <tr  style="font-size:60; background-color:black; color:white; text-align:center">
+        <td>Join the "Men In Black"</td>
+      </tr>
+      <tr style="color:blue; font-size: 40; background-color:white">
+        <td></td>
+      </tr>
+    </table>
+
+    <form align="center" action="" name="joinMIB" >
+            <table style="width:60%; color:red" align="center" >
+              <tr>
+                <td style="padding-bottom: 30; padding-top: 15"> Name: &nbsp;<input type="text" name="name" /> </td>
+                <td style="padding-bottom: 30; padding-top: 15">
+                    Gender: &nbsp;
+                    <select name="gemder">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="unknown">Unknown</option>
+                    </select>
+                </td>
+              </tr>
+              <tr>
+                <td style="color:black; padding-bottom: 30">
+                    <font color="red" > Language: &nbsp; </font>
+                    <input type="checkbox" name="lang" value="Hebrew"/> &nbsp;&nbsp;&nbsp; Hebrew <br>
+                    &emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; <input type="checkbox" name="lang" value="English"/> &nbsp;&nbsp;&nbsp; English <br>
+                    &emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; <input type="checkbox" name="lang" value="Yiddish"/> &nbsp;&nbsp;&nbsp; Yiddish <br>
+                    &emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; <input type="checkbox" name="lang" value="Gallifreyan"/> &nbsp;&nbsp;&nbsp; Gallifreyan <br>
+                    &emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; <input type="checkbox" name="lang" value="Draconian" /> &nbsp;&nbsp;&nbsp; Draconian <br>
+                </td>
+                <td style="color:black; padding-bottom: 30">
+                    <font color="red" > Height: &nbsp; </font>
+                    <input type="radio" name="height" value="0.1-0.5" /> &nbsp;&nbsp;&nbsp; 0.1 - 0.5 Meter <br />
+                    &emsp;&emsp;&emsp;&nbsp;&nbsp; <input type="radio" name="height" value="0.5-1.0"/> &nbsp;&nbsp;&nbsp; 0.5 - 1.0 Meter <br>
+                    &emsp;&emsp;&emsp;&nbsp;&nbsp; <input type="radio" name="height" value="1.0-1.5"/> &nbsp;&nbsp;&nbsp; 1.0 - 1.5 Meter <br>
+                    &emsp;&emsp;&emsp;&nbsp;&nbsp; <input type="radio" name="height" value="1.5Plus"/> &nbsp;&nbsp;&nbsp; Above 1.5 Meter <br>
+                    &emsp;&emsp;&emsp;&nbsp;&nbsp; <input type="radio" name="height" value="changable"/> &nbsp;&nbsp;&nbsp; Changable <br>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    Experiance: <br />
+                    <textarea name="experiance" cols="40" rows="6" ></textarea>
+                </td>
+                <td style="padding-left: 20">
+                    <img src="MIB.gif" width="50%" height="50%"/>
+                </td>
+              </tr>
+            </table>
+    </form>
+    <center>
+        <input type="button" name="submit" value="Submit" /> &emsp;&emsp;
+        <input type="button" name="reset" value="Reset All Fields" />
+    <center>
+</body>
+
+</html>
