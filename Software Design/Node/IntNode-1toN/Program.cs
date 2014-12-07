@@ -12,15 +12,18 @@ namespace IntNode_1toN
             Random rand = new Random();
             int n = rand.Next(2, 100);
 
-            IntNode chain = new IntNode(2);
+            IntNode chain = new IntNode(1);
+            IntNode t = chain;
 
-            for (int i = 3; i < n; i++)
+            for (int i = 2; i < n; i++)
             {
-                chain.next = new IntNode(i);
-                chain = chain.next;
+                t.next = new IntNode(i);
+                t = t.next;
             }
 
             Console.WriteLine(IntNode.printIntNode(chain));
+
+            Console.ReadKey();
         }
     }
 }

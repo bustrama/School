@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntNode", "IntNode\IntNode.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntNode-1toN", "IntNode-1toN\IntNode-1toN.csproj", "{869F8DA9-9CF6-4FAF-B724-32363AE23B59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringToNode", "StringToNode\StringToNode.csproj", "{0DFAA823-BFB6-4125-85E5-5FE858D666BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,6 +21,10 @@ Global
 		{869F8DA9-9CF6-4FAF-B724-32363AE23B59}.Debug|x86.Build.0 = Debug|x86
 		{869F8DA9-9CF6-4FAF-B724-32363AE23B59}.Release|x86.ActiveCfg = Release|x86
 		{869F8DA9-9CF6-4FAF-B724-32363AE23B59}.Release|x86.Build.0 = Release|x86
+		{0DFAA823-BFB6-4125-85E5-5FE858D666BD}.Debug|x86.ActiveCfg = Debug|x86
+		{0DFAA823-BFB6-4125-85E5-5FE858D666BD}.Debug|x86.Build.0 = Debug|x86
+		{0DFAA823-BFB6-4125-85E5-5FE858D666BD}.Release|x86.ActiveCfg = Release|x86
+		{0DFAA823-BFB6-4125-85E5-5FE858D666BD}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
