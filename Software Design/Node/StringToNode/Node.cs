@@ -28,7 +28,7 @@ namespace StringToNode
                 chainString += chain.ToString();
             else
             {
-                chainString += "\n" + chain.info + " --> ";
+                chainString += chain.info + " --> ";
                 chainString += printIntNode(chain.next);
             }
             return chainString;

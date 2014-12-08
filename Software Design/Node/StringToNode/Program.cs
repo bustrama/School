@@ -15,14 +15,20 @@ namespace StringToNode
             str = str.Remove(0, str.IndexOf(' ') +1);
             Node<string> t = stringNode;
 
-            for (int i = 0; i < str.Length; i++)
+            while (str != null)
             {
-                if(str.IndexOf(' ') > 0)
+                if (str.IndexOf(' ') > 0)
+                {
                     t.next = new Node<string>(str.Substring(0, str.IndexOf(' ')));
+                    t = t.next;
+                    str = str.Remove(0, str.IndexOf(' ') + 1);
+                }
                 else
+                {
                     t.next = new Node<string>(str.Substring(0, str.Length));
-                t = t.next;
-                str = str.Remove(0, str.IndexOf(' ') + 1);
+                    t = t.next;
+                    str = null;
+                }
             }
 
             Console.WriteLine(Node<string>.printIntNode(stringNode));
