@@ -31,7 +31,7 @@ namespace StringToNode
                 }
             }
 
-            Console.WriteLine(Node<string>.printIntNode(stringNode));
+            Console.WriteLine(Node<string>.printNode(stringNode));
 
             Console.ReadLine();
         }

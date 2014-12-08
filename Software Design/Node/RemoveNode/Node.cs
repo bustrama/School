@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace StringToNode
+namespace RemoveNode
 {
     class Node<T>
     {
@@ -24,18 +24,23 @@ namespace StringToNode
         public static string removeNode(Node<T> chain, T valueToRemove)
         {
             Node<T> pos = chain;
-            if (pos.info.ToString() == valueToRemove.ToString())
+            if(pos.info.ToString() == valueToRemove.ToString())
             {
                 chain.next = chain.next;
                 pos.next = null;
             }
-            while (pos.next.info.ToString() != valueToRemove.ToString())
+            Node<T> temp_ = null;
+            while (pos.next != null && pos.next.info.ToString() != valueToRemove.ToString())
             {
                 pos = pos.next;
                 Node<T> temp = pos.next;
                 pos.next = temp.next;
                 temp.next = null;
+
+                if (pos.next == null)
+                    temp_ = temp;
             }
+            pos.next = temp_;
             return Node<T>.printNode(chain);
         }
 
