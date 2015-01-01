@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringToNode", "StringToNod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveNode", "RemoveNode\RemoveNode.csproj", "{C94C9CFA-D5B0-4AB2-930C-9E6256F65240}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentList", "StudentList\StudentList.csproj", "{5E1F6CEE-BE9A-402F-8412-E1DA8B9E9308}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -31,6 +33,10 @@ Global
 		{C94C9CFA-D5B0-4AB2-930C-9E6256F65240}.Debug|x86.Build.0 = Debug|x86
 		{C94C9CFA-D5B0-4AB2-930C-9E6256F65240}.Release|x86.ActiveCfg = Release|x86
 		{C94C9CFA-D5B0-4AB2-930C-9E6256F65240}.Release|x86.Build.0 = Release|x86
+		{5E1F6CEE-BE9A-402F-8412-E1DA8B9E9308}.Debug|x86.ActiveCfg = Debug|x86
+		{5E1F6CEE-BE9A-402F-8412-E1DA8B9E9308}.Debug|x86.Build.0 = Debug|x86
+		{5E1F6CEE-BE9A-402F-8412-E1DA8B9E9308}.Release|x86.ActiveCfg = Release|x86
+		{5E1F6CEE-BE9A-402F-8412-E1DA8B9E9308}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
