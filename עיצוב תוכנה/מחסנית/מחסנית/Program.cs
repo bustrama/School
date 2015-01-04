@@ -1,5 +1,4 @@
 ﻿using System;
-//using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Unit4.CollectionsLib;
@@ -9,79 +8,80 @@ namespace מחסנית
 {
     class Program
     {
-        //מקבלת מחסנית
-        //מחזירה את מספר האיברים במחסנית
-        public static int NumOfObjects(Stack<int> s1)
+        static void Main(string[] args)
         {
-            int mone = 0;
-            Stack<int> s2 = new Stack<int>();
-            while (!s1.IsEmpty())
-            {
-                s2.Push(s1.Pop());
-                mone++;
-            }
-            while (!s2.IsEmpty())
-            {
-                s1.Push(s2.Pop());
-            }
-            return mone;
+
         }
-        //מקבלת מחסנית
-        //מחזירה את האחרון במחסנית
-        public static int LastObject(Stack<int> s1)
+
+        public static int count(Stack<int> T)
         {
-            Stack<int> s2 = new Stack<int>();
-            while (!s1.IsEmpty())
+            int counter = 0;
+            Stack<int> temp = new Stack<int>();
+            while (!T.IsEmpty())
             {
-                s2.Push(s1.Pop());
+                temp.Push(T.Pop());
+                counter++;
             }
-            int num = s2.Top();
-            while (!s2.IsEmpty())
+            while (!temp.IsEmpty())
             {
-                s1.Push(s2.Pop());
+                T.Push(temp.Pop());
+            }
+            return counter;
+        }
+
+        //מחזירה את האחרון במחסנית
+        public static int LastObject(Stack<int> T)
+        {
+            Stack<int> temp = new Stack<int>();
+            while (!T.IsEmpty())
+            {
+                temp.Push(T.Pop());
+            }
+            int num = temp.Top();
+            while (!temp.IsEmpty())
+            {
+                T.Push(temp.Pop());
             }
             return num;
         }
-        //מקבל מחסנית
+
         //הופך את סדר האיברי המחסנית
-        public static void Oposite(Stack<int> s1)
+        public static void Oposite(Stack<int> T)
         {
-            Stack<int> s2 = new Stack<int>();
+            Stack<int> temp = new Stack<int>();
             Stack<int> s3 = new Stack<int>();
-            while (!s1.IsEmpty())
+            while (!T.IsEmpty())
             {
-                s2.Push(s1.Pop());
+                temp.Push(T.Pop());
             }
 
-            while (!s2.IsEmpty())
+            while (!temp.IsEmpty())
             {
-                s3.Push(s2.Pop());
+                s3.Push(temp.Pop());
             }
             while (!s3.IsEmpty())
             {
-                s1.Push(s3.Pop());
+                T.Push(s3.Pop());
             }
         }
-        //תרגיל 13 עמוד 246
-        //מחסנית של מחרוזות
+
         //מחזירה מחסנית של אורכי המחרוזות
-        public static Stack<int> GetStringsLength(Stack<string> s1)
+        public static Stack<int> GetStringsLength(Stack<string> T)
         {
-            Stack<int> s2 = new Stack<int>();
+            Stack<int> temp = new Stack<int>();
             Stack<string> s3 = new Stack<string>();
-            while (!s1.IsEmpty())
+            while (!T.IsEmpty())
             {
-                s3.Push(s1.Pop());
+                s3.Push(T.Pop());
             }
             while (!s3.IsEmpty())
             {
-                s1.Push(s3.Pop());
-                s2.Push(s1.Top().Length);
+                T.Push(s3.Pop());
+                temp.Push(T.Top().Length);
             }
-            return s2;
+            return temp;
         }
-        //תרגיל 16 עמוד 247
-        //מערך מחסניות של מספרים שלמים
+
         //סכום האיברים ברשי המחסניות
         public static int GetTopsSum(Stack<int>[] stacks)
         {
@@ -93,7 +93,7 @@ namespace מחסנית
             }
             return sum;
         }
-        //מחסנית מלאה ומספר
+
         //מחזיר את המספר במקום של המספר
         public static int PlaceN(int n, Stack<int> st)
         {
@@ -108,7 +108,7 @@ namespace מחסנית
             return x;
 
         }
-        //מקבלת מחסנית ומספר 
+
         //מחזירה נכון אם המספר במחסנית 
         public static bool IsIn(int num, Stack<int> st)
         {
@@ -126,7 +126,7 @@ namespace מחסנית
             }
             return b;
         }
-        //מחסנית
+
         //מחסנית חדשה בלי כפילויות
         public static Stack<int> NoRepeating(Stack<int> st)
         {
@@ -150,8 +150,7 @@ namespace מחסנית
             }
             return newst;
         }
-        //
-        //
+
         public static void DeleteRepeating(Stack<int> st)
         {
             Stack<int> tempst = new Stack<int>();
@@ -174,75 +173,6 @@ namespace מחסנית
             }
         }
 
-        static void Main(string[] args)
-        {
-            ////שימוש בפעולות
-            //Stack<int> stack = new Stack<int>();
-            //for (int i = 1; i <= 150; i*=2)
-            //{
-            //    stack.Push(i);
-            //}
-
-            //Console.WriteLine(stack.ToString());
-
-            //Console.WriteLine(NumOfObjects(stack));
-
-            //Console.WriteLine(LastObject(stack));
-
-            //Oposite(stack);
-            //Console.WriteLine(stack.ToString());
-            //Console.WriteLine();
-            //Console.WriteLine();
-
-            Stack<int> x = new Stack<int>();
-            for (int i = 4; i >= 1; i--)
-            {
-                x.Push(i);
-                x.Push(7);
-            }
-            x.Push(4);
-            Console.WriteLine(x.ToString());
-            //Console.WriteLine(PlaceN(2, x));
-            //Console.WriteLine(x.ToString());
-            //Console.WriteLine(IsIn(7,x));
-            //Console.WriteLine(x.ToString());
-            //Console.WriteLine("new stack "+NoRepeating(x).ToString());
-            //Console.WriteLine(x.ToString());
-            DeleteRepeating(x);
-            Console.WriteLine("new stack"+x.ToString());
-            ////תרגיל 13 עמוד 246
-            //Stack<string> stack2 = new Stack<string>();
-            //stack2.Push("name");
-            //stack2.Push("my");
-            //stack2.Push("is");
-            //stack2.Push("Geva");
-            //stack2.Push("Yuval");
-            //Console.WriteLine(stack2.ToString());
-            //Console.WriteLine(GetStringsLength(stack2).ToString());
-            //Console.WriteLine();
-            //Console.WriteLine();
-
-
-            ////תרגיל 16 עמוד 248
-            //Stack<int> s1 = new Stack<int>();
-            //for (int i = 1; i <= 4; i++)
-            //{
-            //    s1.Push(i);
-            //}
-            //Stack<int> s2 = new Stack<int>();
-            //for (int i = 1; i <= 3; i++)
-            //{
-            //    s2.Push(i);
-            //}
-            //Stack<int> s3 = new Stack<int>();
-            //for (int i = 1; i <= 2; i++)
-            //{
-            //    s3.Push(i);
-            //}
-            //Stack<int>[] stacks = { s1, s2, s3 };
-            //Console.WriteLine(GetTopsSum(stacks));
-
-
-        }
+        
     }
 }
