@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C# Express 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "מחסנית", "מחסנית\מחסנית.csproj", "{1C15C906-8410-4BFC-B220-BC6A1C681E8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "מחסנית\Stack.csproj", "{1C15C906-8410-4BFC-B220-BC6A1C681E8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
