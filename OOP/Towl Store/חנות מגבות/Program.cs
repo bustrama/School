@@ -4,13 +4,13 @@ using Unit4.CollectionsLib;
 using System.Linq;
 using System.Text;
 
-namespace חנות_מגבות
+namespace Towl_Store
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Mlay m = new Mlay();            
+            Stock m = new Stock();            
             m.Add(15, 10);
             m.Add(9, 10);
             m.Add(19, 10);

@@ -42,12 +42,12 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Unit4">
-      <HintPath>..\..\Unit4.dll</HintPath>
+      <HintPath>..\..\..\Unit4.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mish.cs" />
-    <Compile Include="Mlay.cs" />
+    <Compile Include="Shipment.cs" />
+    <Compile Include="Stock.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

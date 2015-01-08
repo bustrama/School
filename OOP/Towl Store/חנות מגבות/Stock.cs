@@ -4,27 +4,20 @@ using Unit4.CollectionsLib;
 using System.Linq;
 using System.Text;
 
-namespace חנות_מגבות
+namespace Towl_Store
 {
-    class Mlay
+    class Stock
     {
-        private Stack<Mish> stack;
+        public Stack<Shipment> stack { get; private set;}
 
-        public Mlay()
+        public Stock()
         {
-            stack = new Stack<Mish>();
+            stack = new Stack<Shipment>();
         }
-
-        public Stack<Mish> GetStack()
-        {
-            return this.stack;
-        }
-        
-
 
         public void Add(int p, int s)
         {
-            Mish m = new Mish(p, s);
+            Shipment m = new Shipment(p, s);
             stack.Push(m);
         }
 
@@ -33,16 +26,16 @@ namespace חנות_מגבות
             int sum=0;
             while (s > 0)
             {
-                if (s >= stack.Top().GetSum())
+                if (s >= stack.Top().sum)
                 {
-                    sum += stack.Top().GetSum() * stack.Top().GetPrice();
-                    s -= stack.Top().GetSum();
+                    sum += stack.Top().sum * stack.Top().price;
+                    s -= stack.Top().sum;
                     stack.Pop();
                 }
                 else
                 {                    
-                    sum += s * stack.Top().GetPrice();
-                    stack.Top().SetSum(stack.Top().GetSum() - s);
+                    sum += s * stack.Top().price;
+                    stack.Top().sum = stack.Top().sum - s;
                     s = 0;
                 }
             }
