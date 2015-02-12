@@ -22,5 +22,10 @@ namespace Cubes
         {
             return this.basisArea() * this.height;
         }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

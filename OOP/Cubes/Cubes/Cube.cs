@@ -28,7 +28,7 @@ namespace Cubes
 
         public override string ToString()
         {
-            return "\n Basis: " + this.a + "\n Height: "+ this.height;
+            return "\n a: " + this.a + "\n Height: "+ this.height + "Volume: " + this.volume();
         }
     }
 }

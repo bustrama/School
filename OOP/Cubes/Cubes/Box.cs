@@ -23,7 +23,7 @@ namespace Cubes
 
         public override string ToString()
         {
-            return base.ToString() + "\n Length: " + b;
+            return "\n b: " + b + base.ToString();
         }
     }
 }
